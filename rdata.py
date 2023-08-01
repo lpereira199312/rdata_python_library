@@ -7,7 +7,7 @@ def load_socket(host,port):
     return s
 
 def response(socket):
-    data = socket.recv(1024)
+    data = socket.recv(1024).decode
     return data
 
 def insert(socket,collection,book,key,value):
